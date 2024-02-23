@@ -53,7 +53,7 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <form id="contactForm" action="process_form.php" method="post">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -97,7 +97,7 @@
                                     <!-- an error submitting the form-->
                                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="button" onclick="submitForm()">Submit</button></div>
                                 </form>
                             </div>
                         </div>
@@ -127,3 +127,51 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+<script>
+    function submitForm() {
+        // Collect form data
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+
+        // Create a FormData object
+        var formData = new FormData();
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("phone", phone);
+        formData.append("message", message);
+
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Configure it to send a POST request to the PHP file
+        xhr.open("POST", "process_form.php", true);
+
+        // Set up a callback function to handle the response
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                // Form submission successful
+                document.getElementById("submitSuccessMessage").classList.remove("d-none");
+                document.getElementById("submitErrorMessage").classList.add("d-none");
+            } else {
+                // Form submission failed
+                document.getElementById("submitSuccessMessage").classList.add("d-none");
+                document.getElementById("submitErrorMessage").classList.remove("d-none");
+            }
+        };
+
+        // Set up a callback function to handle errors
+        xhr.onerror = function () {
+            console.error("Error sending the form data.");
+            document.getElementById("submitSuccessMessage").classList.add("d-none");
+            document.getElementById("submitErrorMessage").classList.remove("d-none");
+        };
+
+        // Send the form data
+        xhr.send(formData);
+    }
+</script>
+
+
