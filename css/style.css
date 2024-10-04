@@ -6371,7 +6371,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background: linear-gradient(225deg, #080808 0%, #545454 100%)!important;
+  background: linear-gradient(225deg, #080808 0%, #545454 100%)!important; /*black*/
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9960,6 +9960,48 @@ h6,
   border-radius: 60px;
 }
 
+/* new color pallete added */
+.portfolio-links a {
+  background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%); /* Your desired gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Ensures the gradient applies correctly */
+  font-size: 24px; /* Adjust font size if necessary */
+  margin-right: 10px; /* Spacing between icons */
+  transition: transform 0.3s; /* Add a nice transition effect */
+}
+
+.portfolio-links a:hover {
+  transform: scale(1.5); /* Slightly enlarge the icon on hover */
+}
+
+.portfolio-description {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.portfolio-description h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio-description h6 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color:rgba(52, 58, 64, 0.5);
+}
+
+.portfolio-description p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000;
+}
+/* new color pallete added */
+
+
 .portfolio-item .portfolio-btn {
   position: absolute;
   width: 0;
@@ -9969,10 +10011,12 @@ h6,
   border-radius: 4px;
   opacity: 0;
   transition: .5s;
+  background: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%)!important; /*pinkt to blue*/
 }
 
 .portfolio-item:hover .portfolio-btn {
   opacity: 1;
+
   width: calc(100% - 60px);
   height: calc(100% - 60px);
   top: 30px;

@@ -1,427 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Karina Pereira's Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Karina Pereira's Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.png" rel="icon" />
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-      <a href="Index.html" class="navbar-brand ml-lg-3">
-        <h1 class="m-0 display-5">
-          <span class="text-gradient d-inline">Karina</span>Pereira
-        </h1>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-        <div class="navbar-nav m-auto ml-auto py-0">
-          <a href="#home" class="nav-item nav-link active">Home</a>          
-          <a href="#skill" class="nav-item nav-link">Skills</a>
-          <a href="#aboutme" class="nav-item nav-link">About Me</a>
-          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-        </div>
-        <div class="ml-auto d-flex align-items-center">
-            <a href="KarinaDeVargasPereira_Resume.pdf" class="nav-item nav-link btn btn-primary mx-2" target="_blank">Download CV</a>
-            <a href="resume.html" class="nav-item nav-link btn btn-primary mx-2" target="_blank">Resume</a>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
 
-    <!-- Video Modal Start -->
-    <div
-      class="modal fade"
-      id="videoModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Video Modal End -->
-
-   <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center" id="home" style="min-height: 80vh">
-        <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-            <img
-                class="img-profile shadow-sm"
-                src="assets/profile.jpg"
-                alt="KarinaPereira"
-                style="max-width: 100%; height: auto; border-radius: 45px;"
-            />
-            </div>
-            <div class="col-lg-7 text-center text-lg-left">
-            <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-            <h1 class="display-3 text-uppercase mb-2 text-gradient" style="-webkit-text-stroke: 2px #ffffff">
-                Karina Pereira
-            </h1>
-            <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-            <div class="typed-text d-none">Full Stack Developer</div>
-            <div class="col-lg-10">
-                <p>
-                Engineering Ideas into Scalable Code.
-                <br />With backend mastery, I transform complex requirements into efficient, rock-solid solutions.
-                </p>
-            </div>
-            <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                <a href="KarinaDeVargasPereira_Resume.pdf" class="btn btn-outline-light mr-5">Download CV</a>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <!-- Header End -->
-  
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-      <div class="container">
-        <div
-          class="position-relative d-flex align-items-center justify-content-center"
-        >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            Skills
-          </h1>
-          <h1 class="position-absolute text-uppercase text-gradient">
-            Skills and Technologies
-          </h1>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-md-12">
-            <div class="card p-4 text-center">
-              <div class="d-flex justify-content-center flex-wrap">
-                <span class="badge badge-warning custom-badge mx-2 my-1">HTML</span>
-                <span class="badge badge-warning custom-badge mx-2 my-1">CSS</span>
-                <span class="badge badge-info custom-badge mx-2 my-1">Bootstrap</span>
-                <span class="badge badge-success custom-badge mx-2 my-1">Tailwind</span>
-                <span class="badge badge-danger custom-badge mx-2 my-1">Javascript</span>
-                <span class="badge badge-secondary custom-badge mx-2 my-1">React</span>
-                <span class="badge badge-dark custom-badge mx-2 my-1">Node.js</span>
-                <span class="badge badge-info custom-badge mx-2 my-1">MySQL</span>
-                <span class="badge badge-info custom-badge mx-2 my-1">Firebase</span>
-                <span class="badge badge-success custom-badge mx-2 my-1">.NET</span>
-                <span class="badge badge-danger custom-badge mx-2 my-1">Java</span>
-                <span class="badge badge-primary custom-badge mx-2 my-1">PHP</span>
-                <span class="badge badge-dark custom-badge mx-2 my-1">Visual Studio</span>
-                <span class="badge badge-primary custom-badge mx-2 my-1">VS Code</span>
-                <span class="badge badge-success custom-badge mx-2 my-1">IntelliJ</span>
-                <span class="badge badge-info custom-badge mx-2 my-1">Github</span>
-                <span class="badge badge-warning custom-badge mx-2 my-1">AWS</span>
-                <span class="badge badge-primary custom-badge mx-2 my-1">Azure</span>
-                <span class="badge badge-warning custom-badge mx-2 my-1">Trello</span>
-                <span class="badge badge-danger custom-badge mx-2 my-1">Agile</span>
-                <span class="badge badge-secondary custom-badge mx-2 my-1">Figma</span>                        
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Skill End -->
-
-    <!-- About Me -->
-    <div class="container-fluid py-5" id="aboutme">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
-                About
-            </h1>
-            <h1 class="position-absolute text-uppercase text-gradient">
-                About Me
-            </h1>
-            </div>
-            <div class="row align-items-center">
-            <div class="col-md-12">
-                <div class="p-4 text-center">
-                    <div class="portfolio-description">
-
-
-                        <h4>
-                            My name is Karina Pereira, student of JOHN ABBOTT College.
-                        </h4>
-
-                        <h6>
-                            I'm a Full-Stack Developer student, seeking an internship starting on October 7th, 2024. 
-                        </h6>
-                        <p>
-                            With a Bachelor's in
-                             Engineering and experience at Petrobras in Brazil—a major player in the energy sector known for its oil, gas, and energy production—I’ve developed a 
-                             strong technical and analytical foundation. 
-                            My work with the Provincial Government in Manitoba also helped me refine my ability to blend creative and logical thinking to solve complex problems.
-                            While C# is my go-to, I’m ready to work with any of the languages I’ve learned, including HTML, CSS, JavaScript, Java, PHP, React, and SQL. 
-                            I’m passionate about self-learning and eager to apply my skills in a real-world environment. 
-                            My upcoming 8-week, 270-hour internship is a great opportunity for me to contribute to a team, 
-                            grow as a Full-Stack Developer, and maybe share a laugh or two along the way!
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-        <!-- Skill End -->
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-      <div class="container">
-        <div class="position-relative d-flex align-items-center justify-content-center">
-          <h1 class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6">
-            Gallery
-          </h1>
-          <h1 class="position-absolute text-uppercase text-gradient">
-            My Projects
-          </h1>
-        </div>
-        <div class="row portfolio-container">
-
-        <!-- Number One -->
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
-            <div class="position-relative overflow-hidden mb-2">
-              <img class="img-fluid rounded w-100" src="img/projectile.png" alt="" />
-              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href=# target="_blank">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-description">
-              <h4>ProjecTile</h4>
-              <h6>Task Management App</h6>
-              <p>MERN, Socket.io, React-Beautiful-DnD, DaisyUI</p>
-              <a href=# target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href=# target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 1 -->
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-            <div class="position-relative overflow-hidden mb-2">
-              <img class="img-fluid rounded w-100" src="img/portfolio-1.png" alt="" />
-              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href=# target="_blank">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-description">
-              <h4>HarmonyHub</h4>
-              <h6>Music Sharing Platform</h6>
-              <p>React, Node.js, Express.js, MySQL, AWS, Tailwind</p>
-              <a href=# target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href=# target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 2 -->
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-            <div class="position-relative overflow-hidden mb-2">
-              <img class="img-fluid rounded w-100" src="img/portfolio-2.png" alt="" />
-              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href=# target="_blank">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-description">
-              <h4>PlaylistPalooza</h4>
-              <h6>Concert Booking Application</h6>
-              <p>HTML, CSS, Bootstrap, Javascript, PHP</p>
-              <a href=# target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href=# target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 3 -->
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-            <div class="position-relative overflow-hidden mb-2">
-              <img class="img-fluid rounded w-100" src="img/portfolio-3.png" alt="" />
-              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-description">
-              <h4>Montreal Crazy Driver</h4>
-              <h6>Web Game</h6>
-              <p>HTML, CSS, Javascript</p>
-              <a href=# target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 5 -->
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item fifth">
-            <div class="position-relative overflow-hidden mb-2">
-              <img class="img-fluid rounded w-100" src="img/myfridgefriend.png" alt="" />
-              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href=# target="_blank">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-description">
-              <h4>My Fridge Friend</h4>
-              <h6>Inventory manager for the kitchen</h6>
-              <p>C#, .Net Framework </p>
-              <a href=# target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 6 -->
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item sixth">
-            <div class="position-relative overflow-hidden mb-2">
-              <img class="img-fluid rounded w-100" src="img/mommingle.png" alt="" />
-              <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                <a href=# target="_blank">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-description">
-              <h4>MomMingle</h4>
-              <h6>Social Media Platform for Moms</h6>
-              <p>React.js, Node.js, Socket.io </p>
-              <a href=# target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-      <div class="container text-center py-5">
-        <div class="d-flex justify-content-center mb-4">
-          <a class="btn btn-light btn-social mr-2" href=# target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-light btn-social mr-2" href=# target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <button onclick="startEmail()" class="btn btn-light btn-social">
-            <i class="fas fa-envelope"></i>
-          </button>
-        </div>
-        <script>
-          function startEmail() {
-            const to = "kavp86@gmail.com";
-            const mailtoLink = `mailto:${to}`;
-            window.location.href = mailtoLink;
-          }
-        </script>
-        <footer class="container-fluid bg-primary text-white text-center py-3">
-          <p>&copy; 2024 Karina Pereira</p>
-        </footer>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top">
-      <i class="fa fa-angle-double-up"></i>
+  <!-- Navbar Start -->
+  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    <a href="Index.html" class="navbar-brand ml-lg-3">
+      <h1 class="m-0 display-5">
+        <span class="text-gradient d-inline">Karina</span>Pereira
+      </h1>
     </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+      <div class="navbar-nav m-auto ml-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#skill" class="nav-item nav-link">Skills</a>
+        <a href="#aboutme" class="nav-item nav-link">About Me</a>
+        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+      </div>
+      <div class="ml-auto d-flex align-items-center">
+        <a href="KarinaDeVargasPereira_Resume.pdf" class="nav-item nav-link btn btn-primary mx-2"
+          target="_blank">Download CV</a>
+        <a href="resume.html" class="nav-item nav-link btn btn-primary mx-2" target="_blank">Resume</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Video Modal Start -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Modal End -->
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Header Start -->
+  <div class="container-fluid bg-primary d-flex align-items-center" id="home" style="min-height: 80vh">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+          <img class="img-profile shadow-sm" src="assets/profile.jpg" alt="KarinaPereira"
+            style="max-width: 100%; height: auto; border-radius: 45px;" />
+        </div>
+        <div class="col-lg-7 text-center text-lg-left">
+          <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+          <h1 class="display-3 text-uppercase mb-2 text-gradient" style="-webkit-text-stroke: 2px #ffffff">
+            Karina Pereira
+          </h1>
+          <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+          <div class="typed-text d-none">Full Stack Developer</div>
+          <div class="col-lg-10">
+            <p>
+              Engineering Ideas into Scalable Code.
+              <br />With backend mastery, I transform complex requirements into efficient, rock-solid solutions.
+            </p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+            <a href="KarinaDeVargasPereira_Resume.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+
+
+  <!-- Skill Start -->
+  <div class="container-fluid py-5" id="skill">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+          Skills
+        </h1>
+        <h1 class="position-absolute text-uppercase text-gradient">
+          Skills and Technologies
+        </h1>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="card p-4 text-center">
+            <div class="d-flex justify-content-center flex-wrap">
+              <span class="badge badge-warning custom-badge mx-2 my-1">HTML</span>
+              <span class="badge badge-warning custom-badge mx-2 my-1">CSS</span>
+              <span class="badge badge-info custom-badge mx-2 my-1">Bootstrap</span>
+              <span class="badge badge-success custom-badge mx-2 my-1">Tailwind</span>
+              <span class="badge badge-danger custom-badge mx-2 my-1">Javascript</span>
+              <span class="badge badge-secondary custom-badge mx-2 my-1">React</span>
+              <span class="badge badge-dark custom-badge mx-2 my-1">Node.js</span>
+              <span class="badge badge-info custom-badge mx-2 my-1">MySQL</span>
+              <span class="badge badge-info custom-badge mx-2 my-1">Firebase</span>
+              <span class="badge badge-success custom-badge mx-2 my-1">.NET</span>
+              <span class="badge badge-danger custom-badge mx-2 my-1">Java</span>
+              <span class="badge badge-primary custom-badge mx-2 my-1">PHP</span>
+              <span class="badge badge-dark custom-badge mx-2 my-1">Visual Studio</span>
+              <span class="badge badge-primary custom-badge mx-2 my-1">VS Code</span>
+              <span class="badge badge-success custom-badge mx-2 my-1">IntelliJ</span>
+              <span class="badge badge-info custom-badge mx-2 my-1">Github</span>
+              <span class="badge badge-warning custom-badge mx-2 my-1">AWS</span>
+              <span class="badge badge-primary custom-badge mx-2 my-1">Azure</span>
+              <span class="badge badge-warning custom-badge mx-2 my-1">Trello</span>
+              <span class="badge badge-danger custom-badge mx-2 my-1">Agile</span>
+              <span class="badge badge-secondary custom-badge mx-2 my-1">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skill End -->
+
+  <!-- About Me -->
+  <div class="container-fluid py-5" id="aboutme">
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+          About
+        </h1>
+        <h1 class="position-absolute text-uppercase text-gradient">
+          About Me
+        </h1>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="p-4 text-center">
+            <div class="portfolio-description">
+
+
+              <h4>
+                My name is Karina Pereira, student of JOHN ABBOTT College.
+              </h4>
+
+              <h6>
+                I'm a Full-Stack Developer student, seeking an internship starting on October 7th, 2024.
+              </h6>
+              <p>
+                With a Bachelor's in
+                Engineering and experience at Petrobras in Brazil—a major player in the energy sector known for its oil,
+                gas, and energy production—I’ve developed a
+                strong technical and analytical foundation.
+                My work with the Provincial Government in Manitoba also helped me refine my ability to blend creative
+                and logical thinking to solve complex problems.
+                While C# is my go-to, I’m ready to work with any of the languages I’ve learned, including HTML, CSS,
+                JavaScript, Java, PHP, React, and SQL.
+                I’m passionate about self-learning and eager to apply my skills in a real-world environment.
+                My upcoming 8-week, 270-hour internship is a great opportunity for me to contribute to a team,
+                grow as a Full-Stack Developer, and maybe share a laugh or two along the way!
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skill End -->
+
+  <!-- Portfolio Start -->
+<div class="container-fluid pt-5 pb-3" id="portfolio">
+  <div class="container">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+      <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+        Gallery
+      </h1>
+      <h1 class="position-absolute text-uppercase text-gradient">
+        My Projects
+      </h1>
+    </div>
+    <div class="row portfolio-container">
+
+      <!-- 1 - Bartmart -->
+      <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+        <div class="position-relative overflow-hidden mb-2">
+          <img class="img-fluid rounded w-100" src="img/01Bartmart_Homepage.png" alt="Bartmart_Homepage" />
+          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+            <a href="#" target="_blank">
+              <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Description -->
+        <div class="portfolio-description">
+          <h4 class="text-gradient">Bartmart</h4>
+          <h6>
+            An online marketplace that enhances user experience through intuitive 
+            browsing and search functionalities.
+          </h6>
+          <p>ASP.NET Core 8, Firebase, Azure, Azure DevOps, Bootstrap, CSS, HTML, and JavaScript.</p>
+          <!-- buttons for git and hosted web app -->
+          <div class="portfolio-links">
+            <a href="https://github.com/KarinaDeVargas/BartMart26Azure5pm" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://webappnamebartmart-hpayaub9fvb3d5h8.canadacentral-01.azurewebsites.net/Home"
+              target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END 1 - Bartmart -->
+
+      <!-- 2 - MomMingle -->
+      <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+        <div class="position-relative overflow-hidden mb-2">
+          <img class="img-fluid rounded w-100" src="img/02mommingle.png" alt="MomMingle App Screenshot" />
+          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+            <a href="#" target="_blank">
+              <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Description -->
+        <div class="portfolio-description">
+          <h4 class="text-gradient">MomMingle</h4>
+          <h6> A social media platform for mothers to connect, share experiences, 
+            and access resources in a safe environment.</h6>
+          <p>React.js, Node.js, Socket.io</p>
+          <!-- buttons for git and hosted web app -->
+          <div class="portfolio-links">
+            <a href="https://github.com/KarinaDeVargas/2024-FSD10-MomMingle" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END - 2 MomMingle -->
+
+      <!-- 3 - Justsell-->
+      <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+        <div class="position-relative overflow-hidden mb-2">
+          <img class="img-fluid rounded w-100" src="img/03Justsell.png" alt="Justsell" />
+          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+            <a href="#" target="_blank">
+              <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Description -->
+        <div class="portfolio-description">
+          <h4 class="text-gradient">Justsell</h4>
+          <h6>An e-commerce platform simplifying real estate sales with a clean interface focusing on simplicity and efficiency..</h6>
+          <p>Justsell</p>
+          <!-- buttons for git and hosted web app -->
+          <div class="portfolio-links">
+            <a href="Justsellgit" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END - 3 JustSell -->
+
+      <!-- 4 - CodeWise-->
+      <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+        <div class="position-relative overflow-hidden mb-2">
+          <img class="img-fluid rounded w-100" src="img/04Codewise.png" alt="CodeWise App Screenshot" />
+          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+            <a href="#" target="_blank">
+              <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Description -->
+        <div class="portfolio-description">
+          <h4 class="text-gradient">CodeWise</h4>
+          <h6>A platform dedicated to selling a variety of courses, providing users with the 
+            tools and resources to learn and develop new skills.</h6>
+          <p>CodeWise</p>
+          <!-- buttons for git and hosted web app -->
+          <div class="portfolio-links">
+            <a href="codewisegit" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END - 4 CodeWise -->
+
+      <!-- 5 - Montreal Crazy Driver-->
+      <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+        <div class="position-relative overflow-hidden mb-2">
+          <img class="img-fluid rounded w-100" src="img/05MontrealCrazyDriver.png" alt="MontrealCrazyDriver" />
+          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+            <a href="#" target="_blank">
+              <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Description -->
+        <div class="portfolio-description">
+          <h4 class="text-gradient">Montreal Crazy Driver</h4>
+          <h6>An engaging web game that tests driving skills in a fun, chaotic environment.</h6>
+          <p>HTML, CSS, Javascript</p>
+          <!-- buttons for git and hosted web app -->
+          <div class="portfolio-links">
+            <a href="https://github.com/KarinaDeVargas/2023-MontrealCrazyDriver_JS" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END - 5 Montreal Crazy Driver -->
+
+      <!-- THE END -->     
+    </div>
+  </div>
+</div>
+<!-- Portfolio End -->
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container text-center py-5">
+      <div class="d-flex justify-content-center mb-4">
+        <a class="btn btn-light btn-social mr-2" href=# target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="btn btn-light btn-social mr-2" href=# target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <button onclick="startEmail()" class="btn btn-light btn-social">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </div>
+      <script>
+        function startEmail() {
+          const to = "kavp86@gmail.com";
+          const mailtoLink = `mailto:${to}`;
+          window.location.href = mailtoLink;
+        }
+      </script>
+      <footer class="container-fluid bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Karina Pereira</p>
+      </footer>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Scroll to Bottom -->
+  <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-outline-dark px-0 back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+  </a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
